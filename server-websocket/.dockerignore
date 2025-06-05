@@ -1,0 +1,14 @@
+# Node modules
+node_modules
+npm-debug.log
+
+# Git related
+.git
+.gitignore
+
+# Environment variables (if you have any)
+.env
+
+# Other files
+*.md
+.DS_Store

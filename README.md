@@ -27,6 +27,30 @@ npm start
 
 The server will run on <http://localhost:4000>
 
+### Docker (Server)
+
+The server can now be containerized using Docker:
+
+```bash
+cd server-websocket
+# Build the Docker image
+npm run docker-build
+# Run the container
+npm run docker-run
+```
+
+Or directly with Docker commands:
+
+```bash
+cd server-websocket
+# Build the Docker image
+docker build -t server-websocket .
+# Run the container
+docker run -p 4000:4000 server-websocket
+```
+
+The containerized server will still be accessible at <http://localhost:4000>
+
 ### Client
 
 ```bash
@@ -43,3 +67,4 @@ the counter updating in real-time.
 - **Frontend**: React 19, TypeScript, Vite
 - **Backend**: Express.js, WebSockets (ws library)
 - **Communication**: REST API, WebSockets
+- **Deployment**: Docker
